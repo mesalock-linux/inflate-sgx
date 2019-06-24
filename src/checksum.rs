@@ -1,3 +1,4 @@
+use std::prelude::v1::*;
 use adler32::RollingAdler32;
 
 pub fn adler32_from_bytes(bytes: &[u8; 4]) -> u32 {

@@ -10,6 +10,7 @@
 /// println!("{}", from_utf8(&decoded).unwrap()); // prints "Hello, world"
 /// ```
 use crate::InflateStream;
+use std::prelude::v1::*;
 
 fn inflate(inflater: &mut InflateStream, data: &[u8]) -> Result<Vec<u8>, String> {
     let mut decoded = Vec::<u8>::new();
